@@ -17,7 +17,7 @@ kaynak=( ftp://alpha.gnu.org/gnu/grub/grub-2.02~beta3.tar.xz \
 derle() {
 cd $isim-2.02~beta3
 
-patch -Np1 -i ../milis_name.patch
+#patch -Np1 -i ../milis_name.patch
 patch -i $SRC/initramfs.patch util/grub.d/10_linux.in
 patch -Np1 -i ../grub_mkconfig.patch
 
